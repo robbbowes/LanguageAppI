@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 
 import Language from './constants/Language'
 import { Sentence } from './models/Sentence'
@@ -8,7 +8,7 @@ import FlashCard from './components/FlashCard'
 export default function App() {
     const sentenceData: Sentence = {
         id: 1,
-        text: 'Jeg har en hytte med bare tre rom.',
+        path: 'L001T04',
         translations: [
             {
                 id: 1,
@@ -20,8 +20,7 @@ export default function App() {
                 language: Language.French,
                 text: "J'ai un chalet avec seulement trois chambres.",
             },
-        ],
-        audio: './assets/assimil/lesson4/T03.mp3',
+        ]
     }
 
     return (

@@ -8,7 +8,7 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
-assimil/
+assets/*.mp3
 
 # macOS
 .DS_Store

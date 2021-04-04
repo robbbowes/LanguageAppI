@@ -30,17 +30,17 @@ const AudioPlayer = (props: AudioPlayerProps) => {
     }, [sound])
 
     // const path = './assets/assimil/lesson4/T03.mp3'
-    const meta = async () => {
-        const [{ localUri }] = await Asset.loadAsync(src);
-        console.log(localUri)
-        const data = await MusicInfo.getMusicInfoAsync(
-            localUri, 
-            {
-            title: true
-        })
-        console.log(data)
-        return data
-    }
+    // const meta = async () => {
+    //     const [{ localUri }] = await Asset.loadAsync(src);
+    //     console.log(localUri)
+    //     const data = await MusicInfo.getMusicInfoAsync(
+    //         localUri, 
+    //         {
+    //         title: true
+    //     })
+    //     console.log(data)
+    //     return data
+    // }
 
     return (
         <View>
@@ -48,7 +48,7 @@ const AudioPlayer = (props: AudioPlayerProps) => {
                 <TouchableOpacity style={styles.control} onPress={playSound}>
                     <FontAwesome5 name="play" size={20} color="#444" />
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.control} onPress={() => {}}>
+                {/* <TouchableOpacity style={styles.control} onPress={() => {}}>
                     <MaterialCommunityIcons
                         name="record-rec"
                         size={28}
@@ -61,7 +61,7 @@ const AudioPlayer = (props: AudioPlayerProps) => {
                         size={28}
                         color="#444"
                     />
-                </TouchableOpacity>
+                </TouchableOpacity> */}
             </View>
         </View>
     )

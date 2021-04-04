@@ -9,7 +9,10 @@
   },
   "dependencies": {
     "expo": "~40.0.0",
+    "expo-app-loading": "^1.0.1",
+    "expo-asset": "~8.2.1",
     "expo-av": "^9.0.0",
+    "expo-file-system": "~9.3.0",
     "expo-font": "~8.4.0",
     "expo-media-library": "~10.0.0",
     "expo-music-info": "^1.0.1",
@@ -19,9 +22,7 @@
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
     "react-native-music-metadata": "0.0.2",
-    "react-native-web": "~0.13.12",
-    "expo-file-system": "~9.3.0",
-    "expo-asset": "~8.2.1"
+    "react-native-web": "~0.13.12"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
