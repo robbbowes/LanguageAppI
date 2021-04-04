@@ -8,6 +8,7 @@ import FlashCard from './components/FlashCard'
 export default function App() {
     const sentenceData: Sentence = {
         id: 1,
+        lessonNumber: '46',
         path: 'L001T04',
         translations: [
             {
